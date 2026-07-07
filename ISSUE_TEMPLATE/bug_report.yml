@@ -1,0 +1,97 @@
+---
+name: "⚠️ Bug report"
+about: Create a report to help us improve
+title: ""
+labels: "type: bug"
+assignees: ""
+---
+
+<!-- DO NOT DELETE
+validate_template=true
+template_path=.github/ISSUE_TEMPLATE/bug_report.md
+-->
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the Firebase community!
+        
+        **Before getting started, make sure filing a bug report is the correct course of action:**
+        * **Think you found a bug?:** Yeah, we're definitely not perfect! Please use this template and include a minimal repro when opening the issue. If you know how to solve the issue, please create a Pull Request, and we'd be happy to review it!
+        * **Have a feature request?:** Great, we love hearing how we can improve our products! However, do not use this template to submit a feature request. Please submit your feature requests to: https://firebase.google.com/support/contact/bugs-features/
+        * **Have a usage question?:** We get lots of those and we love helping you, but GitHub is not the best place for them and they will be closed. Please take a look at the guide first: https://firebase.google.com/docs/cli/
+
+        If the official documentation doesn't help, try asking through our official support channel: https://firebase.google.com/support/
+
+        Additional locations to check for solutions or assistance from the community:
+        - Stack Overflow: https://stackoverflow.com/
+        - Firebase Slack Community: https://firebase.community/
+        
+        *Please avoid duplicate posting across multiple channels!*
+
+        If your issue involves code/tools in this repository not working as expected, please complete this bug report. 
+
+  - type: input
+    attributes:
+      label: firebase-tools Version
+      description: What version of the Firebase CLI (`firebase-tools`) are you using? (Output of `firebase --version`)
+      placeholder: "e.g., 15.0.0"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: additional-tools Version
+      description: If you are using any other tool like Node.js, Python, etc., please specify them
+      placeholder: "e.g., Node.js 24.17.0, Python3.12"
+    validations:
+      required: false
+  
+  - type: input
+    attributes:
+      label: Platform
+      description: What operating system are you using? 
+      placeholder: "e.g., macOS, Windows, Ubuntu"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Test case
+      description: Provide a minimal, complete, and verifiable example (http://stackoverflow.com/help/mcve).
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Provide the exact steps needed to reproduce the issue with the test case above.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      description: What actually happened? 
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Relevant Log Output
+      description: |
+        Please copy and paste any relevant log output. 
+        * For CLI: Run the command with the `--debug` flag.
+      placeholder: |
+        Paste your logs here. Please redact any personally identifiable information.
+      render: shell
+    validations:
+      required: false
