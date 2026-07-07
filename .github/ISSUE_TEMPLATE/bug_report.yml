@@ -4,11 +4,6 @@ title: ""
 labels: ["type: bug"]
 assignees: ""
 
-<!-- DO NOT DELETE
-validate_template=true
-template_path=.github/ISSUE_TEMPLATE/bug_report.md
--->
-
 body:
   - type: markdown
     attributes:
