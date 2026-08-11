@@ -29,7 +29,7 @@ body:
       label: Environment Info
       description: |
         Please specify your environment details:
-        - **`firebase-tools` Version:** (Output of `firebase --version`)
+        - **`firebase-tools`:** (Output of `firebase --version`)
         - **Platform / OS:** (e.g., macOS, Windows, Ubuntu)
         - **Additional tools:** (e.g., Node.js 24.17.0, Python 3.12)
       placeholder: |
