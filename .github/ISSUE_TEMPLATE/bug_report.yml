@@ -24,27 +24,18 @@ body:
 
         If your issue involves code/tools in this repository not working as expected, please complete this bug report. 
 
-  - type: input
+  - type: textarea
     attributes:
-      label: firebase-tools Version
-      description: What version of the Firebase CLI (`firebase-tools`) are you using? (Output of `firebase --version`)
-      placeholder: "e.g., 15.0.0"
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: additional-tools Version
-      description: If you are using any other tool like Node.js, Python, etc., please specify them
-      placeholder: "e.g., Node.js 24.17.0, Python3.12"
-    validations:
-      required: false
-  
-  - type: input
-    attributes:
-      label: Platform
-      description: What operating system are you using? 
-      placeholder: "e.g., macOS, Windows, Ubuntu"
+      label: Environment & Versions
+      description: |
+        Please specify your environment details:
+        - **`firebase-tools` Version:** (Output of `firebase --version`)
+        - **Platform / OS:** (e.g., macOS, Windows, Ubuntu)
+        - **Additional tools:** (e.g., Node.js 24.17.0, Python 3.12)
+      placeholder: |
+        firebase-tools version: 
+        Platform: 
+        Additional tools/versions: 
     validations:
       required: true
 
