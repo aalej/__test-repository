@@ -26,7 +26,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Environment & Versions
+      label: Environment Info
       description: |
         Please specify your environment details:
         - **`firebase-tools` Version:** (Output of `firebase --version`)
@@ -69,12 +69,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Relevant Log Output
-      description: |
-        Please copy and paste any relevant log output. 
-        * For CLI: Run the command with the `--debug` flag.
-      placeholder: |
-        Paste your logs here. Please redact any personally identifiable information.
-      render: shell
+      label: Additional Information
+      description: If you have any information you'd like to share to help us troubleshoot the issue, please include it here.
     validations:
       required: false
